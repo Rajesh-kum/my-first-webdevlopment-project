@@ -1,0 +1,302 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.back-container{
+  background: #c5c4c4;
+}
+
+.container{
+  margin: 0 auto;
+  width: 70%;
+}
+
+.logo img{
+  width: 300px; 
+  height: 170px;
+  margin: 2% 0;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+}
+
+/* Start navigation */
+.nav{
+  background: #15191d;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.nav ul {
+  list-style: none;
+  margin:0 auto;
+}
+
+ .nav ul li{
+  float:left;
+  display: inline;
+  text-transform: uppercase;
+}
+
+.nav a:link, .nav a:visited{
+ text-decoration: none;
+ color: white;
+ padding:10px 25px;
+ display: inline-block;
+ height: 20px;
+}
+
+.nav a:focus,.nav a:hover{
+  color: #ffffff;
+  background: #f05034;
+  border-radius: 5px;
+}
+/* End navigation */
+
+/* Start Artical */
+.main{
+  display: flex;
+  margin-top: 20px;
+}
+
+.container-body{
+  min-height: 600px;
+  flex: 2;
+  margin-right: 10px;
+}
+
+.containt-area{
+  min-height: 350px;
+  background-color: #ffffff;
+  line-height: 1.5em;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.containt-area{
+  padding: 20px 10px;
+}
+
+.containt-area h2{
+  line-height: 2em;
+  padding-left: 10px;
+}
+
+.containt-area .writer{
+  opacity: 50%;
+  margin: 10px 5px;
+}
+
+.post2{
+  margin-top: 10px;
+}
+ /*End Artical  */
+
+/* start sidebar */
+.sidebar{
+  min-width: 150px;
+  min-height: 250px;
+  flex: 1;
+}
+
+.sidebar h3{
+  line-height: 2em;
+  text-align: center;
+}
+
+.sidebar-area{
+  height: 250px;
+  background-color: #faefe1;
+  line-height: 1.6em;
+  font-size: large;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sidebar-area p{
+  padding-left: 10px;
+  }
+
+.second{
+  margin-top: 10px;
+}
+
+/* End sidebaar */
+
+/* start footer */
+.footer{
+  background-color: #0f0f0f;
+  display: flex;
+  color: white;
+  min-height: 150px;
+  margin-top: 10px;
+}
+
+.footer h3{
+  font-size: larger;
+  line-height: 2em;
+  text-align: center;
+}
+
+.footer p{
+  font-size: large;
+  line-height: 1.2em;
+}
+
+.left-footer{
+margin-left: 5px;
+flex: 1;
+}
+
+.middel-footer{
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
+.right-footer{
+    flex: 1;
+    }
+
+/* footer end  */
+
+
+/* for responsive */
+
+@media only screen and (min-width:150px) and (max-width:650px){
+
+  .container{
+    width: 90%;
+    font-size: 95%;
+  }
+
+  .logo img{
+    width: 100%; 
+    margin: 2% 0;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+  }
+ 
+  /* Start navigation */
+.nav{
+  
+  height: 160px;
+  border-radius: 8px;
+}
+
+.nav ul {
+  padding:0 auto;
+}
+
+ .nav ul li{
+   width: 100%;
+   text-align: center;
+}
+
+.nav a:link, .nav a:visited{
+ padding:10px 25px;
+ height: 20px;
+}
+
+.nav a:focus,.nav a:hover{
+  color: #ffffff;
+  display: block;
+  border-radius: 5px;
+}
+/* End navigation */
+
+/* Start Artical */
+.main{
+  margin-top: 10px;
+  width: 100%;
+  display: block;
+}
+
+.container-body{
+  width: 100%;
+  min-height: 600px;
+  margin-right: 10px;
+}
+
+.containt-area{
+  min-height: 350px;
+  background-color: #ffffff;
+  line-height: 28px;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.containt-area{
+  padding: 20px 10px;
+}
+
+.containt-area h2{
+  line-height: 2em;
+  padding-left: 10px;
+}
+
+.containt-area .writer{
+  opacity: 50%;
+  margin: 10px 5px;
+}
+
+.post2{
+  margin-top: 10px;
+}
+ /*End Artical  */
+
+ /* start sidebar */
+.sidebar{
+  min-width: 150px;
+  min-height: 250px;
+}
+
+.sidebar h3{
+  line-height: 2em;
+  text-align: center;
+}
+
+.sidebar-area{
+  height: 250px;
+  background-color: #faefe1;
+  line-height: 1.6em;
+  font-size: large;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sidebar-area {
+  padding-left: 10px;
+  margin-top: 10px;
+  }
+/* End sidebaar */
+
+/* start footer */
+.footer{
+  display: block;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.footer h3{
+  font-size: larger;
+  line-height: 2em;
+  text-align: center;
+}
+
+.footer p{
+  font-size: large;
+  line-height: 1.2em;
+  margin: 20px 10px;
+}
+
+.left-footer{
+  padding-top: 10px;
+}
+.right-footer{
+  padding-bottom: 10px;
+}
+
+/* footer end  */
+
+}
